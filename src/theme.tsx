@@ -13,7 +13,9 @@ const fontWeights = {
 } as const
 
 const fontSizes = {
-    paragraph: '1rem'
+    basic: '1rem',
+    paragraph: '1rem',
+    heading: '2rem'
 } as const
 
 export const theme = {
