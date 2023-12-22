@@ -38,6 +38,7 @@ export const Card = (props: CardProps) => {
 const Paragraph = styled.div`
     color: ${props => props.theme.colors.neutral.grey};
     font-size: ${props => props.theme.fontSizes.paragraph};
+    line-height: 2rem;
 `
 
 const Heading = styled.div`
@@ -56,10 +57,19 @@ const CardContainer = styled.div`
     gap: 2rem;
 
     img {
-        border-radius: 40px;
+        border-radius: 1rem;
         width: 100%;
     }
     
-    box-shadow: 2px 2px 2px ${props => props.theme.colors.neutral.black};
+    box-shadow: .25rem .25rem 0 ${props => props.theme.colors.neutral.black};
+    
+    &:hover {
+        cursor: pointer;
+        box-shadow: 1rem 1rem 0 ${props => props.theme.colors.neutral.black};
+        
+        ${Heading} {
+            color: ${props => props.theme.colors.primary};
+        }
+    }
     
 `

@@ -7,7 +7,7 @@ export const mockData: CardProps[] = [{
     tag: 'Learning',
     publishedDate: '21 Dec 2023',
     title: 'HTML & CSS foundations',
-    description: 'These languages are the backbone of every website, defining structure, content, and presentation',
+    description: 'These languages are the backbone of every website, defining structure, content, and presentation.',
     author: 'Greg Hooper',
     authorAvatar: images.imageAvatar,
     authorAvatarAlt: 'Author'
